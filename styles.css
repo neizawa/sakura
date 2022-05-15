@@ -60,7 +60,7 @@ body {
 
 .hero {
     display: flex;
-    height: 480px;
+    flex: 1 1 480px;
 }
 
 .conteiner {
@@ -70,6 +70,8 @@ body {
     align-items: center;
     flex: 3;
     gap: 16px;
+    flex-flow: wrap;
+    padding: 0 0 16px 0;
 }
 
 .left .main {
@@ -92,7 +94,7 @@ body {
 }
 
 .left, .right {
-    flex: 0 1 40%;
+    flex: 0 0 40%;
 }
 
 .conteiner button {
@@ -113,8 +115,8 @@ body {
 
 .info {
     display: flex;
-    height: 480px;
-    padding: 0px 0px 32px 0px;
+    flex: 1 1 480px;
+    padding: 0 0 16px 0 ;
 }
 
 .info .products {
@@ -132,10 +134,12 @@ body {
     color: #1F2937;
     flex: 0 0 100%;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .table {
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
     gap: 64px;
     text-align: center;
@@ -164,7 +168,8 @@ body {
 .quote {
     background-color: #E5E7EB;
     display: flex;
-    height: 480px;
+    flex: 1 1 480px;
+    padding: 16px 0;
 }
 
 .quote .side {
@@ -220,6 +225,8 @@ body {
     background-color: #3882F6;
     height: 180px;
     flex: 1 1 100%;
+    padding: 0px 16px;
+    gap: 16px;
 }
 
 .susection .conteiner .content .maintext {
